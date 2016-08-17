@@ -21,7 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.niit.shoppingcart.dao.ProductDAO;
 import com.niit.shoppingcart.dao.UserDAO;
 import com.niit.shoppingcart.model.Product;
-//import com.niit.shoppingcart.model.UserDetails;
+import com.niit.shoppingcart.model.UserDetails;
 
 
 @Controller
@@ -95,7 +95,7 @@ public String addChairs(HttpServletRequest request,@Valid @ModelAttribute("Produ
     	//return "ViewAll";
     	return "retrive";
     }
-/*@ModelAttribute("UserDetails")
+@ModelAttribute("UserDetails")
 public UserDetails createuser(){
 	return new UserDetails();
 }
@@ -112,7 +112,7 @@ public String addUser(@Valid @ModelAttribute("userDetails")UserDetails userDetai
 	//us.saveOrUpdate(userDetails);
 	return "Home";
    }
-*/
+
 }
 
 
