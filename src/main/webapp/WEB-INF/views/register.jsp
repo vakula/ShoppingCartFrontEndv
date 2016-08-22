@@ -34,18 +34,17 @@
 
 	</nav>
 	<div class="container">
-
 		<c:url var="register" value="register"></c:url>
-		<form:form commandName="UserDetails" method="post" action="storeuser">
+		<form:form commandName="Register" method="post" action="storeuser">
 			<form:errors path="*" cssClass="errStyle" element="div" />
 			<div class="form-group">
-				<form:label path="name">
-					<spring:message text="User Name" />
+				<form:label path="username">
+					<spring:message text="UserName" />
 				</form:label>
-				<form:input class="form-control" path="name" />
-				<form:errors path="name">
+				<form:input class="form-control" path="username" />
+				<form:errors path="username">
+				
 
-					</p>
 				</form:errors>
 			</div>
 			<div class="form-group">
@@ -89,11 +88,11 @@
 			</div>
 
 			<div class="form-group">
-				<form:label path="password">
+				<form:label path="confirmpassword">
 					<spring:message text="Confirm Password" />
 				</form:label>
-				<form:input class="form-control" path="password" />
-				<form:errors path="password">
+				<form:input class="form-control" path="confirmpassword" />
+				<form:errors path="confirmpassword">
 					<p class="errStyle">* Invalid Confirm Password</p>
 				</form:errors>
 			</div>
